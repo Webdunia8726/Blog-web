@@ -1,0 +1,211 @@
+.hero-section {
+  margin-top: 2rem;
+  position: relative;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+}
+
+.card-body {
+  background-color: #ffffff;
+  border-top: 1px solid #e9ecef;
+}
+
+.btn-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+.accordion {
+  margin: 2rem;
+}
+
+.hero-section button {
+  position: absolute;
+  top: 70%;
+  right: 10%;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Added shadow effect */
+  font-weight: 600;
+  border: 1px solid rgb(163, 163, 163);
+  /* Fixed border style */
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  color: black;
+  transition: box-shadow 0.3s ease;
+  /* Smooth shadow transition */
+}
+
+.hero-section button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background-color: orange;
+  color: white;
+
+}
+
+@media (max-width: 768px) {
+  .hero-section button {
+    font-size: 10px;
+    padding: 5px;
+    font-weight: 300px;
+    top: 73%;
+  }
+}
+
+
+/* footer */
+.footer {
+  background-color: black;
+  padding: 40px;
+  color: white;
+}
+
+.logo-footer {
+  width: 180px;
+  height: 100px;
+}
+
+.footer a,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.footer h5 {
+  border-bottom: 3px solid #ff914d;
+  padding-bottom: 5px;
+}
+
+.footer .fa-brands {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-primarynewsletter {
+  background-color: #ff914d;
+  color: black;
+  font-weight: 600;
+
+}
+
+.btn-primarynewsletter:hover {
+  background-color: #ff914d;
+
+}
+
+
+
+/* navbar css */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+.dropdown-menu li:first-child a {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Custom styling for mega menu */
+.mega-menu {
+  position: static !important;
+}
+
+.mega-menu .dropdown-menu {
+  width: 50%;
+  padding: 15px;
+  display: none;
+  /* Hide dropdown menu by default */
+  left: 40%;
+  /* Adjust the left position to center horizontally */
+}
+
+.mega-menu:hover .dropdown-menu {
+  display: block;
+  /* Show dropdown menu when hovering over mega-menu */
+}
+
+.mega-menu .dropdown-menu a {
+  display: block;
+  color: #212529;
+  text-decoration: none;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+.dropdown-menu a:hover {
+  color: #1c6bc2;
+}
+
+.dropdown-menu li:first-child a {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+/* navbar end */
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+
+  /* Adjust dropdown menu for mobile */
+  .dropdown-menu {
+    width: 100%;
+    left: 0;
+    padding: 10px;
+    display: block;
+    position: relative;
+  }
+
+  Make the dropdown menu stack vertically .dropdown-menu.show {
+    flex-direction: column;
+  }
+
+  /* Adjust mega menu on mobile */
+  .mega-menu .dropdown-menu {
+    width: 100%;
+    padding: 10px;
+    left: 0;
+
+  }
+
+  /* Adjust links for mobile */
+  .mega-menu .dropdown-menu a,
+  .dropdown-menu a {
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+  }
+
+
+}

@@ -1,0 +1,306 @@
+/* navbar css */
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu ul{
+    list-style: none;
+    padding: 0;
+  }
+  .dropdown-menu.show{
+    display: flex;
+  }
+  .dropdown-menu li:first-child a{
+    font-weight: bold;
+    font-size: 16px;
+  }
+  /* Custom styling for mega menu */
+  .mega-menu {
+    position: static !important;
+  }
+
+  .mega-menu .dropdown-menu {
+    width: 50%;
+    padding: 15px;
+    display: none; /* Hide dropdown menu by default */
+    left: 40%; /* Adjust the left position to center horizontally */
+  }
+
+  .mega-menu:hover .dropdown-menu {
+    display: block; /* Show dropdown menu when hovering over mega-menu */
+  }
+
+  .mega-menu .dropdown-menu a {
+    display: block;
+    color: #212529;
+    text-decoration: none;
+  }
+
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .dropdown-menu.show {
+    display: flex;
+  }
+  .dropdown-menu a:hover{
+    color: #1c6bc2;
+  }
+
+  .dropdown-menu li:first-child a {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .nav-link{
+    font-weight: 500;
+  }
+  /* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  /* Adjust dropdown menu for mobile */
+  .dropdown-menu {
+      width: 100%;
+      left: 0;
+      padding: 10px;
+      display: block;
+      position: relative;
+  }
+
+  Make the dropdown menu stack vertically
+  .dropdown-menu.show {
+      flex-direction: column;
+  }
+
+  /* Adjust mega menu on mobile */
+  .mega-menu .dropdown-menu {
+      width: 100%;
+      padding: 10px;
+      left: 0;
+      
+  }
+
+  /* Adjust links for mobile */
+  .mega-menu .dropdown-menu a,
+  .dropdown-menu a {
+      font-size: 14px;
+      padding: 10px;
+      text-align: left;
+  }
+
+  
+}
+
+/* navbar end */
+
+
+/* hero section banner */
+.overlay-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.overlay-container img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover; /* Ensures the image covers the container properly */
+    display: block; /* Ensure image is displayed by default */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #ffa365;
+    padding: 20px;
+    width: 600px;
+    max-width: 600px; /* Adjust this width as needed */
+    text-align: left; /* Default alignment */
+    background-color: rgba(255, 255, 255, 0.7); /* Optional background for better readability */
+}
+
+.overlay-text h1, .overlay-text p {
+    margin: 0;
+}
+
+.overlay-container h1 {
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.herobtn {
+    width: 150px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #ffa365;
+    border: none;
+}
+/* end */
+.partnershiphead{
+    padding: 30px;
+    background-color: #ff914d99;; /* Optional background for better readability */
+
+
+}
+@media (max-width: 768px) {
+    .overlay-container img {
+        display: none; /* Hide image on mobile */
+    }
+    .overlay-text {
+        position: relative; /* Changed from absolute */
+        padding: 20px;
+        text-align: center; /* Center text on mobile */
+        width: 100%;
+        max-width: none; /* Allow text to use full width */
+        background-color: rgba(255, 255, 255, 0.7); /* Optional background for better readability */
+        margin: 0; /* Ensure no extra margin */
+        top: 0; /* Ensure top is reset */
+        transform: translateY(0); /* Reset transform */
+    }
+    .overlay-text h1 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+        margin-bottom: 10px; /* Adjust spacing between heading and paragraph */
+    }
+    .overlay-text p {
+        margin-bottom: 20px; /* Adjust spacing between paragraph and button */
+    }
+    .herobtn {
+        width: 120px; /* Adjust button width for mobile */
+        font-size: 14px; /* Adjust button text size for mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay-container img {
+        display: none; /* Hide image on mobile */
+    }
+    .overlay-text {
+        position: static; /* Remove absolute positioning */
+        padding: 20px;
+        text-align: center; /* Center text on mobile */
+        width: 100%;
+        max-width: none; /* Allow text to use full width */
+        background-color: rgba(201, 179, 179, 0.7); /* Optional background for better readability */
+    }
+    .overlay-text h1 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+    .herobtn {
+        width: 120px; /* Adjust button width for mobile */
+        font-size: 14px; /* Adjust button text size for mobile */
+    }
+    .overlay-container {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 7px;
+    }
+    
+}
+/* End */
+
+
+/* logo slider */
+.slide img {
+    width: 100px;
+    height: 100px;
+    animation: scroll 15s linear infinite;
+  }
+  
+  .slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+  }
+  
+  .slider {
+    margin-top: 70px;
+    background-color: #ff914d99;;
+    padding: 8em 2em;
+  }
+  
+  @keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-1000%)}
+  }
+/* end logo slider */
+/* Contact form start */
+ /* Center the form */
+ .contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* end */
+
+/* partnership opportunitiess */
+.cardicon{
+height: 300px;    
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cardicon img{
+width: 150px;
+height: 150px;
+padding: 20px;
+}
+/* why partner with us */
+.card-body{
+    height: 180px;
+}
+.card-img-top{
+  height: 200px;
+}
+/* end */
+
+/* Heading animation all */
+.border-bottom-heading {
+    display: inline-block; /* Make the border match the width of the text */
+    border-bottom: 3px solid #48daa9; /* Change the color and width as needed */
+    padding-bottom: 10px; /* Optional: to add some space between the text and the border */
+}
+  /* end */
+.ourpartners{
+    display: inline-block;
+    border-bottom: 2px solid black; 
+    justify-content: center;
+    text-align: center;
+}
+
+/* footer */
+.footer{
+    background-color: black;
+    padding: 40px;
+    color: white;
+}
+.logo-footer{
+    width: 180px;
+    height: 100px;
+}
+.footer a,li{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.footer h5{
+    border-bottom: 3px solid #ff914d;
+    padding-bottom: 5px;
+}
+.footer .fa-brands{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.btn-primarynewsletter{
+    background-color: #ff914d ;
+    color: black;
+    font-weight: 600;
+    
+}
+.btn-primarynewsletter:hover{
+     background-color: #ff914d ;
+    
+}

@@ -1,0 +1,78 @@
+/* Custom CSS for Hero Section */
+body{
+    background-color: lightblue;
+}
+.hero-section {
+    color: #ffffff; /* Text color for the Hero Section */
+    text-align: center;
+}
+
+.hero-section .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #0056b3; /* Button color on hover */
+    border-color: #004085;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+.content{
+    color: black;
+}
+.content:hover{
+    color: blue;
+    text-decoration: none;
+}
+.head{
+    background-image:("Carrertop.png") ;
+    text-align: center;
+    color: darkblue;
+    height: 30px;
+    width: auto;
+}
+.home{
+    color: white;
+    text-align: center;
+    background-color: blue;
+}
+.img-wrapper {
+    position:relative;
+    width: auto;
+
+  }
+  
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+  
+  .img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100px;
+    text-align: center;
+    margin-right: 900px;
+    margin-bottom: 300px;
+  }
+  
+  .img-overlay:before {
+    content: ' ';
+    display: block;
+    /* adjust 'height' to position overlay content vertically */
+    height: 50%;
+  }
+  .btntop{
+    width: 300px;
+  }

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaders Boli by Predulive: Join Us and Inspire Future Leaders with Your Story!</title>
+    <meta name="description" content="Leaders Boli, created by Predulive Edutech Foundation, inspires and educates young minds through authentic stories from visionary founders, influential leaders and change-makers in their local language.">
+    <link rel="icon" href="favi.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->  
+    <link href="carrer.css" rel="stylesheet">
+      <style>
+
+        /* navbar css */
+        .logo{
+    width: 100px;
+    height: 50px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu ul{
+    list-style: none;
+    padding: 0;
+  }
+  .dropdown-menu.show{
+    display: flex;
+  }
+  .dropdown-menu li:first-child a{
+    font-weight: bold;
+    font-size: 16px;
+  }
+  /* Custom styling for mega menu */
+  .mega-menu {
+    position: static !important;
+  }
+
+  .mega-menu .dropdown-menu {
+    width: 50%;
+    padding: 15px;
+    display: none; /* Hide dropdown menu by default */
+    left: 40%; /* Adjust the left position to center horizontally */
+  }
+
+  .mega-menu:hover .dropdown-menu {
+    display: block; /* Show dropdown menu when hovering over mega-menu */
+  }
+
+  .mega-menu .dropdown-menu a {
+    display: block;
+    color: #212529;
+    text-decoration: none;
+  }
+
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .dropdown-menu.show {
+    display: flex;
+  }
+  .dropdown-menu a:hover{
+    color: #1c6bc2;
+  }
+
+  .dropdown-menu li:first-child a {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .nav-link{
+    font-weight: 500;
+  }
+  /* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    /* Adjust dropdown menu for mobile */
+    .dropdown-menu {
+        width: 100%;
+        left: 0;
+        padding: 10px;
+        display: block;
+        position: relative;
+    }
+
+    Make the dropdown menu stack vertically
+    .dropdown-menu.show {
+        flex-direction: column;
+    }
+
+    /* Adjust mega menu on mobile */
+    .mega-menu .dropdown-menu {
+        width: 100%;
+        padding: 10px;
+        left: 0;
+        
+    }
+
+    /* Adjust links for mobile */
+    .mega-menu .dropdown-menu a,
+    .dropdown-menu a {
+        font-size: 14px;
+        padding: 10px;
+        text-align: left;
+    }
+}
+/* navbar end */
+
+/* footer */
+.footer{
+    background-color: black;
+    padding: 40px;
+    color: white;
+}
+.logo-footer{
+    width: 180px;
+    height: 100px;
+}
+.footer a,li{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.footer h5{
+    border-bottom: 3px solid #ff914d;
+    padding-bottom: 5px;
+}
+.footer .fa-brands{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.btn-primarynewsletter{
+    background-color: #ff914d ;
+    color: black;
+    font-weight: 600;
+    
+}
+.btn-primarynewsletter:hover{
+     background-color: #ff914d ;
+    
+}
+        .card-img-top {
+          height: 200px;
+          object-fit: cover;
+        }
+        .card {
+          margin-bottom: 20px;
+        }
+        .jobs{
+          text-align: center;
+          padding-bottom: 100px;
+        }
+         /* Media Queries */
+         @media (max-width: 992px) { /* Tablet size and below */
+            .img-overlay {
+                position: absolute;
+                transform: none;
+              /* Add some margin at the top */
+            }
+        }
+
+        @media (max-width: 768px) { /* Mobile size and below */
+            #LbButton {
+                margin-top: 40px; /* Move button further down */
+                text-align: center;
+                margin: 0;
+                padding: 0; /* Center the text */
+                
+            }
+           
+        }
+
+        @media (max-width: 576px) { /* Extra small devices */
+            .img-overlay {
+                margin-top: 60px; /* Further down on extra small devices */
+                padding-right: 400px;
+                margin-top: 100px;
+
+            }
+        }
+        .body{
+          background-color: #ff914d99;
+          padding: 0;
+          margin: 0;
+        }
+        a{
+          text-decoration: none;
+        }
+       
+
+        /* General button styling */
+.whatsapp-button, .call-button {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    z-index: 1000; /* Ensure it's above other elements */
+    font-size: 24px; /* Icon size */
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px; /* Vertically center the icon */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+/* WhatsApp button (Left side) */
+.whatsapp-button {
+    left: 20px; /* Distance from the left side */
+    background-color: #25D366; /* WhatsApp green color */
+}
+
+/* Call button (Right side) */
+.call-button {
+    right: 20px; /* Distance from the right side */
+    background-color: #007bff; /* Bootstrap primary blue color */
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .whatsapp-button, .call-button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px; /* Smaller icon size */
+        line-height: 40px; /* Adjust line height */
+        bottom: 15px; /* Adjust position for mobile */
+    }
+}
+
+      </style>
+    </head>
+    <body>
+
+     <!-- navbar start  -->
+     <nav class="navbar navbar-expand-lg sticky-top bg-white"
+     style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+     <div class="container-fluid">
+       <a class="navbar-brand" href="index.html">
+         <img src="assets/images/homeimg/leadersboli_logo.png"  alt="Logo" class="logo">
+      </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+ 
+           <li class="nav-item dropdown mega-menu">
+             <a class="nav-link active dropdown-toggle" href="#" id="megaMenuDropdown" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">
+               Stories
+             </a>
+             <div class="dropdown-menu" aria-labelledby="megaMenuDropdown">
+               <div class="row">
+                 <div class="col-md-6 ">
+                   <img src="assets/images/homeimg/invite poster.png" alt="" class="img-fluid">
+                 </div>
+                 <div class="col-md-6 ">
+                   <a href="Story.html"><b>Founders</b></a>
+                   <p>Discover how visionaries turned their dreams into reality.</p>
+                   <a href="story_govt-officer.html"><b>Goverment Officials</b></a>
+                   <p>See How Dedicated leaders are making a difference.</p>
+                 </div>
+                
+               </div>
+             </div>
+ 
+             <li class="nav-item dropdown mega-menu">
+                 <a class="nav-link active dropdown-toggle" href="#" id="megaMenuDropdown" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                   Podcast
+                 </a>
+                 <div class="dropdown-menu" aria-labelledby="megaMenuDropdown">
+                   <div class="row">
+                     <div class="col-md-6">
+                       <img src="assets/images/homeimg/invite poster.png" alt="" class="img-fluid">
+                     </div>
+                     <div class="col-md-6">
+                         <a href="Podcast-founder.html"><b>Founders'Insights</b></a>
+                         <p>Hear how founder built their success.</p>
+                         <a href="Podcast_govt_officaial.html"><b>Officials' Perspectives</b></a>
+                         <p>Discover the journeys of dedicated officials.</p>
+                     </div>
+                    
+                   </div>
+                 </div>
+ 
+                 <li class="nav-item dropdown mega-menu">
+                     <a class="nav-link active dropdown-toggle" href="#" id="megaMenuDropdown" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                       Resources
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="megaMenuDropdown">
+                       <div class="row">
+                         <div class="col-md-6">
+                           <img src="assets/images/homeimg/invite poster.png" alt="" class="img-fluid">
+                         </div>
+                         <div class="col-md-6">
+                             <a href="Research.html"><b>Report & Research</b></a>
+                             <p>Explore unique insights and data on leadership and impact.</p>
+                             <a href="Career.html"><b>Career</b></a>
+                             <p>Discover job opportunities and Career growth resources.</p>
+                         </div>
+                        
+                       </div>
+                     </div>
+ 
+                 
+                     <li class="nav-item">
+                         <a class="nav-link active" href="partnership.html">Partnership</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link active" href="about.html">About Us</a>
+                       </li>
+ 
+         </ul>
+         
+       </div>
+     </div>
+   </nav>
+     <!-- navbar end -->
+      <!-- navbar -->
+      <section class="header">
+        <div class="img-wrapper col-md-lg">
+            <img class="img-responsive"
+                 src="Images/CareerImages/Carrertop.png">
+            <div class="img-overlay">
+              <!-- navbarbutton -->
+              <a href="https://forms.gle/xvyUydK5HmBcMupS6"><button class="btn btn-md btn-primary btn-lg btntop">Join Our Team At Leaders Boli</button></a>
+            </div>
+          </div>
+          </section>
+          <br>
+          <br>
+          <br>
+          <!-- containersections -->
+          <div class="container-fluid jobs"> 
+            <h1> <marquee>We are always looking for passionate individuals to join our team. Explore our current job openings below.</marquee></h1>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg report-btn"> Latest Job Openings </button>
+          </div>
+          <!-- boxes -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Images/CareerImages/Designer.png" class="card-img-top" alt="Graphic Designer">
+              <div class="card-body ">
+                <h5><a class="card-title content" href="GraphicDesigner.html">Graphic Designer</a></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Images/CareerImages/Video Editor.png" class="card-img-top" alt="Python Developer">
+              <div class="card-body">
+                <h5><a class="card-title content" href="VideoEditor.html">Video Editor</a></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Images/CareerImages/DMS.png" class="card-img-top" alt="Research & Development">
+              <div class="card-body">
+                <h5><a class="card-title content" href="DMS.html">Digital Media Specialist</a></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+          <br>
+          <br>
+          <br>
+          <!-- footer-image -->
+      <div class="img-wrapper col-md-lg">
+        <a href="https://forms.gle/xvyUydK5HmBcMupS6">
+        <img class="img-responsive"
+             src="Images/CareerImages/CareerFooter.png"></a>
+        <div class="img-overlay">
+        </div>
+      </div>
+      </section>
+
+       <!-- footer start -->
+ <div class="footer mt-5">
+  <div class="container-fluid">
+      <div class="row">
+
+          <div class="col-md-4">
+              <img src="assets/images/homeimg/Predulive_Org_Logo_-removebg-preview.png" alt="" class="img-fluid logo-footer"> <br>
+              Leaders Boli, created by Predulive Edutech Foundation, inspires and
+              educates young minds through authentic stories from visionary founders,
+              influential leaders and change-makers in their local language.
+              <br>
+              <br>
+              <a href=""><i class="fa-brands fa-linkedin fa-2xl" style="color: #1552bc;"></i></a>
+              <a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: #c70a56;"></i></a>
+              <a href=""><i class="fa-brands fa-facebook fa-2xl" style="color: #2059bc;"></i></a>
+              <a href=""><i class="fa-brands fa-square-twitter fa-2xl" style="color: #264f97;"></i></a>
+              <a href=""><i class="fa-brands fa-youtube fa-2xl" style="color: #FF0000;"></i></a>
+          </div>
+
+              
+          <div class="col-md-2">
+              <h5>Resources hub</h5>
+             <li><a href="">Stories</a></li>
+             <li><a href="">Podcast</a></li>
+             <li><a href="">Report & Research</a></li>
+             <li><a href="">Career</a></li>
+             <li><a href="">FAQs</a></li>
+
+          </div>
+          <div class="col-md-2">
+              <h5>Discover</h5>
+              <li><a href="">Share Your Story</a></li>
+              <li><a href="">Join our Podcast</a></li>
+              <li><a href="">Spotlight</a></li>
+              <li><a href="">Partnership</a></li>
+
+
+          </div>
+          <div class="col-md-2">
+              <h5>Legal</h5>
+              <li><a href="">POSH</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Community Guide</a></li>
+
+          </div>
+          <div class="col-md-2">
+<h5>Newsletter Signup</h5>
+<input type="text">
+<a href=""><div class="btn btn-primarynewsletter mt-2"> Subscribe</div></a>
+          </div>
+      </div>
+  </div>
+ </div>
+ <div class="container-fluid bg-dark">
+  <h6 class="text-center text-white p-3">© 2024 Leaders Boli by Predulive Edutech Foundation. All Rights Reserved</h6>
+ </div>
+ <!-- footer end -->
+  <!-- Buttons -->
+   <!-- WhatsApp Button (Left side) -->
+<a href="https://wa.me/yourphonenumber" class="whatsapp-button" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Call Button (Right side) -->
+<a href="tel:+1234567890" class="call-button">
+  <i class="fas fa-phone-alt"></i>
+</a>
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,545 @@
+.logo{
+  width: 100px;
+  height: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+  background: none;
+  border: none;
+}
+
+.testimonial-card img {
+  height: 300px;
+  width: 395px;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+
+@media (max-width:768px) {
+  .testimonial-card img {
+    height: auto;
+    width: auto;
+    margin: 0rem;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 166, 0, 0.475);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+}
+
+/* Remove hover effect */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  transition: none;
+  /* Remove transition */
+}
+
+.heading-section h5 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.heading-section span {
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+
+.heading-section p {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 400;
+  color: white;
+}
+
+.card h5 {
+  margin-top: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 2rem;
+}
+
+.card p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+.card-body {
+  height: 150px;
+  margin-bottom: 1rem;
+
+}
+
+
+.top-banner {
+  position: relative;
+}
+
+.top-banner button {
+  position: absolute;
+  top: 80%;
+  right: 20%;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+}
+
+@media (max-width:768px) {
+  .top-banner button {
+    font-size: 10px;
+    padding: 7px;
+  }
+}
+
+.intro {
+
+  padding: 5rem;
+  color: rgb(186, 12, 12);
+}
+
+.sector h2 {
+  font-size: 4rem;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sector {
+  display: flex;
+  flex-direction: column;
+}
+
+.sector button {
+
+  width: 8rem;
+
+
+}
+
+@media (max-width:768px) {
+  .sector {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#dropdownMenuButton {
+  padding: .5rem;
+  margin-left: 14rem;
+  font-size: 14px;
+}
+
+.feature-founder {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.feature-card img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 2px solid rgb(233, 232, 239);
+}
+
+.testimonial-founders {
+  background-color: rgb(233, 229, 229);
+}
+
+.technology-section,
+.Agriculture-section,
+.finance-section,
+.founder-feature,
+
+.infrastructure-official,
+.intro {
+  background-color: #ff914d99;
+  padding: 2rem;
+
+}
+
+.testimonial-founders {
+  padding: 2rem;
+}
+
+.feature-founder h5 {
+  color: white;
+  margin-top: 10px;
+
+}
+
+.feature-founder p {
+  color: white;
+}
+
+.feature-card p {
+  color: white;
+}
+
+/* podcast style */
+.podcast-section {
+  position: relative;
+}
+
+
+.podcast-section button {
+
+  position: absolute;
+  top: 63%;
+  right: 43%;
+  font-weight: 700;
+  background-color: rgba(21, 182, 21, 0.645);
+
+}
+
+.upload-sat {
+  position: relative;
+
+}
+
+.upload-sat {
+  position: absolute;
+  top: 5% !important;
+  left: 5%;
+  width: 25rem;
+  font-weight: 700;
+  background-color: rgba(21, 182, 21, 0.645) !important;
+}
+
+@media (max-width:768px) {
+  .upload-sat {
+    position: absolute;
+    top: 9% !important;
+    left: 2%;
+    width: 10rem;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: rgba(21, 182, 21, 0.645) !important;
+  }
+
+  .podcast-section button {
+
+    position: absolute;
+    top: 63%;
+    right: 30%;
+    font-weight: 700;
+    background-color: rgba(21, 182, 21, 0.645);
+
+  }
+}
+
+/* share story section css start */
+
+.share-story-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ff914d99;
+  padding: 1rem;
+
+}
+
+.share-story-section button {
+  padding: 1rem;
+  background-color: green;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+}
+
+.share-story-section a {
+  text-decoration: none;
+  color: white;
+}
+
+/* goverment official podcast section */
+.govt-official-section img {
+  width: 100vw;
+}
+
+.govt-official-section {
+  position: relative;
+}
+
+.listen-button {
+  position: absolute;
+  bottom: 13%;
+  left: 5%;
+  background-color: rgba(12, 135, 12, 0.736);
+  padding: 1rem;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  width: 10rem;
+}
+
+.subscribe-button {
+  position: absolute;
+  bottom: 13%;
+  right: 5%;
+  background-color: red;
+  padding: 1rem;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  width: 10rem;
+}
+
+@media (max-width:768px) {
+  .subscribe-button {
+    padding: .5rem;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 5rem;
+  }
+
+  .listen-button {
+    padding: .5rem;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 5rem;
+  }
+}
+
+/* govt official footer section style start */
+.govt-official-footer img {
+  width: 100vw;
+}
+
+.govt-official-footer {
+  position: relative;
+}
+
+.subscribe-now-button {
+  position: absolute;
+  top: 30%;
+  left: 58%;
+  background-color: rgb(174, 9, 9);
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid white;
+  font-weight: 600;
+}
+
+.join-button {
+  position: absolute;
+  top: 55%;
+  left: 27%;
+  background-color: rgb(79, 205, 79);
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid white;
+  font-weight: 600;
+}
+
+@media (max-width:768px) {
+  .join-button {
+    padding: .5rem;
+    font-size: 7px;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid white;
+    font-weight: 600;
+  }
+
+  .subscribe-now-button {
+    padding: .5rem;
+    font-size: 7px;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid white;
+    font-weight: 600;
+  }
+}
+
+/* 
+post govt off css  */
+
+.testimonial-card a {
+  text-decoration: none !important;
+  color: black;
+
+}
+
+/* footer */
+.footer {
+  background-color: black;
+  padding: 40px;
+  color: white;
+}
+
+.logo-footer {
+  width: 180px;
+  height: 100px;
+}
+
+.footer a,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.footer h5 {
+  border-bottom: 3px solid #ff914d;
+  padding-bottom: 5px;
+}
+
+.footer .fa-brands {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-primarynewsletter {
+  background-color: #ff914d;
+  color: black;
+  font-weight: 600;
+
+}
+
+.btn-primarynewsletter:hover {
+  background-color: #ff914d;
+
+}
+
+
+
+/* navbar css */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+.dropdown-menu li:first-child a {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Custom styling for mega menu */
+.mega-menu {
+  position: static !important;
+}
+
+.mega-menu .dropdown-menu {
+  width: 50%;
+  padding: 15px;
+  display: none;
+  /* Hide dropdown menu by default */
+  left: 40%;
+  /* Adjust the left position to center horizontally */
+}
+
+.mega-menu:hover .dropdown-menu {
+  display: block;
+  /* Show dropdown menu when hovering over mega-menu */
+}
+
+.mega-menu .dropdown-menu a {
+  display: block;
+  color: #212529;
+  text-decoration: none;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+.dropdown-menu a:hover {
+  color: #1c6bc2;
+}
+
+.dropdown-menu li:first-child a {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+/* navbar end */
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+
+  /* Adjust dropdown menu for mobile */
+  .dropdown-menu {
+    width: 100%;
+    left: 0;
+    padding: 10px;
+    display: block;
+    position: relative;
+  }
+
+  Make the dropdown menu stack vertically .dropdown-menu.show {
+    flex-direction: column;
+  }
+
+  /* Adjust mega menu on mobile */
+  .mega-menu .dropdown-menu {
+    width: 100%;
+    padding: 10px;
+    left: 0;
+
+  }
+
+  /* Adjust links for mobile */
+  .mega-menu .dropdown-menu a,
+  .dropdown-menu a {
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+  }
+
+
+}
