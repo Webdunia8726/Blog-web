@@ -324,3 +324,29 @@ padding: 50px;
         bottom: 15px; /* Adjust position for mobile */
     }
 }
+
+/* banner */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.center-bottom-btn {
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom edge */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Styling the button */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.center-bottom-btn:hover {
+    background-color: #0056b3;
+}
+

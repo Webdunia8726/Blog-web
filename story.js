@@ -51,7 +51,7 @@ const agricultureFoundersData = [
   {
     id: "2",
     name: "Shameek Chakravarty",
-    img: "agriculture-img/Shameek Chakravarty - Farmizen.jpg",
+    img: "agriculture-img/Shameek Chakravarty - Farmizen.jpeg",
     title: "co-founder and CEO of Farmizen",
   },
   {
@@ -176,3 +176,15 @@ createCarouselItems(agricultureFoundersData, "agricultureCarouselInner");
 createCarouselItems(educationFoundersData, "educationCarouselInner");
 createCarouselItems(financeFoundersData, "financeCarouselInner");
 createCarouselItems(socialImpactFoundersData, "impactCarouselInner");
+
+document.querySelectorAll(".dropdown-item").forEach((item) => {
+  item.addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent default link behavior
+    const targetId = this.getAttribute("data-target");
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});

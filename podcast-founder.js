@@ -4,36 +4,42 @@ const foundersData = [
     name: "Bhavish Aggarwal",
     img: "founder-img/1.jpg",
     title: "Co-Founder and CEO of Ola Cabs",
+    URL: "https://youtu.be/WiYeb5pYavc?si=Ua-UcsvQEDM2Sz-y",
   },
   {
     id: "2",
     name: "Byju Raveendran",
     img: "founder-img/2.jpg",
     title: "Founder and CEO of BYJU'S",
+    URL: " https://youtu.be/ZPyEfdO7v70?si=WXpbJFJAOpzxvK1X",
   },
   {
     id: "3",
     name: "Falguni Nayar",
     img: "founder-img/3.jpg",
     title: "Founder of Nykaa",
+    URL: "https://youtu.be/9BFSKjbODK8?si=ii16st3Xzt5XgBxD",
   },
   {
     id: "4",
     name: "Kiran Mazumdar-Shaw",
     img: "founder-img/4.jpg",
     title: "Founder of Biocon",
+    URL: " https://youtu.be/58i057QXl1A?si=hru86lnZojQRK8rK",
   },
   {
     id: "5",
     name: "N. R. Narayana Murthy",
     img: "founder-img/5.jpg",
     title: "Co-founder of Infosys",
+    URL: "https://youtu.be/PNBGRAWghrM?si=NiN-2XnVvjuzFBI6",
   },
   {
     id: "6",
     name: "Ritesh Agarwal",
     img: "founder-img/6.jpg",
     title: "Founder and CEO of OYO Rooms",
+    URL: "https://youtu.be/B9jZABnvq9A?si=mda8Gyme0dx1CBSV",
   },
 ];
 
@@ -129,6 +135,7 @@ const financeFoundersData = [
     name: "Yashish Dahiya",
     img: "Finance-img/Yashish Dahiya - PolicyBazaar.jpg",
     title: "PolicyBazaar",
+    URL: "https://youtu.be/Qp-dT6jpcGQ?si=mDC3QC38ZvINpXc8",
   },
 ];
 
@@ -170,6 +177,18 @@ const socialImpactFoundersData = [
     title: "Media Executive and Philanthropist",
   },
 ];
+
+document.querySelectorAll(".dropdown-item").forEach((item) => {
+  item.addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent default link behavior
+    const targetId = this.getAttribute("data-target");
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
 
 function createCarouselItems(data, containerId) {
   const container = document.getElementById(containerId);

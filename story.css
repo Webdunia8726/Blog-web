@@ -1,4 +1,4 @@
-.logo{
+.logo {
   width: 100px;
   height: 50px;
 }
@@ -10,6 +10,12 @@
   border: none;
 }
 
+.testimonial-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .testimonial-card img {
   height: 300px;
   width: 395px;
@@ -18,14 +24,33 @@
 }
 
 
+
 @media (max-width:768px) {
+  .testimonial-card {
+    margin-bottom: 1rem;
+  }
+
   .testimonial-card img {
-    height: auto;
-    width: auto;
+    height: 250px;
+    width: 300px;
     margin: 0rem;
     border-radius: 10px;
     padding: 10px;
   }
+
+  .fix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card-body {
+    height: 160px !important;
+  }
+
+
+
 }
 
 .carousel-control-prev-icon,
@@ -62,7 +87,7 @@
 
 .heading-section p {
   font-size: 2rem;
-  font-style: italic;
+
   font-weight: 400;
   color: white;
 }
@@ -87,9 +112,16 @@
 }
 
 
+
 .top-banner {
   position: relative;
 }
+
+.gov-off-topBanner {
+  width: 100vw;
+}
+
+
 
 .top-banner button {
   position: absolute;
@@ -103,11 +135,97 @@
   padding: 15px;
 }
 
+
+
+.gov-story-ex-button {
+  position: absolute;
+  top: 70.7%;
+  left: 44%;
+  background-color: green;
+}
+
+.gov-story-ex-button button {
+
+  background-color: rgb(59, 192, 59);
+  width: 14rem;
+  padding: 17px;
+  border-radius: 2rem;
+  color: white;
+  border: 2px solid white;
+}
+
 @media (max-width:768px) {
   .top-banner button {
     font-size: 10px;
     padding: 7px;
   }
+
+  .gov-story-ex-button {
+    position: absolute;
+    top: 69.7%;
+    left: 47%;
+    background-color: green;
+  }
+
+  .gov-story-ex-button button {
+
+    background-color: rgb(59, 192, 59);
+    width: 6rem;
+    font-size: 9px;
+    padding: 3px;
+    border-radius: 1rem;
+    color: white;
+    border: 2px solid white;
+  }
+}
+
+.govt-story-footer {
+  position: relative;
+}
+
+.govt-story-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.govt-story-footer button {
+  position: absolute;
+  bottom: 20%;
+  right: 30%;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 2rem;
+  padding: 1rem;
+  font-size: 18px;
+
+}
+
+.govt-story-footer button:hover {
+  border: 2px solid orange;
+  font-size: 20px;
+}
+
+
+@media (max-width:768px) {
+
+  .govt-story-footer button {
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0;
+    font-size: 8px;
+    line-height: 1;
+
+  }
+
+  .govt-story-footer button:hover {
+    border: 2px solid orange;
+    font-size: 10px;
+  }
+
 }
 
 .intro {
@@ -260,10 +378,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #ff914d99;
+
   padding: 1rem;
 
 }
+
+.wisdom {
+  background-color: rgb(226, 208, 208);
+}
+
 
 .share-story-section button {
   padding: 1rem;
@@ -333,6 +456,8 @@
     width: 5rem;
   }
 }
+
+
 
 /* govt official footer section style start */
 .govt-official-footer img {
