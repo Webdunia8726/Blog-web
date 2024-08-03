@@ -100,6 +100,27 @@
   color: white;
 }
 
+@media (max-width:768px) {
+  .heading-section h5 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .heading-section span {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+  }
+
+  .heading-section p {
+    font-size: 1rem;
+
+    font-weight: 300;
+    color: white;
+  }
+}
+
+
 .card h5 {
   margin-top: 10px;
   font-size: 2rem;
@@ -255,7 +276,7 @@
   }
 
   .sector h2 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
 }
