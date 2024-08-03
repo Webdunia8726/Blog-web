@@ -16,26 +16,28 @@
   align-items: center;
 }
 
-.testimonial-card img {
-  height: 300px;
-  width: 395px;
-  margin: 1rem;
-  border-radius: 10px;
+
+.testimonial-card {
+  height: 500px !important;
 }
 
-
+.testimonial-card img {
+  height: 300px !important;
+  padding: 20px;
+}
 
 @media (max-width:768px) {
   .testimonial-card {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .testimonial-card {
+    height: 350px !important;
   }
 
   .testimonial-card img {
-    height: 250px;
-    width: 300px;
-    margin: 0rem;
-    border-radius: 10px;
-    padding: 10px;
+    height: 200px !important;
+    padding: 20px;
   }
 
   .fix {
@@ -46,10 +48,16 @@
   }
 
   .card-body {
-    height: 160px !important;
+    height: 50px;
   }
 
+  .card-body h2 {
+    font-size: 20px !important;
+  }
 
+  .card-body p {
+    font-size: 12px !important;
+  }
 
 }
 
@@ -108,7 +116,6 @@
 .card-body {
   height: 150px;
   margin-bottom: 1rem;
-
 }
 
 
@@ -116,7 +123,6 @@
 .top-banner {
   position: relative;
 }
-
 
 
 
@@ -226,26 +232,36 @@
 }
 
 .intro {
-
   padding: 5rem;
   color: rgb(186, 12, 12);
 }
+
+.sector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 .sector h2 {
   font-size: 4rem;
 }
 
-.title-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+@media (max-width:768px) {
+  .sector {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sector h2 {
+    font-size: 2rem;
+  }
+
 }
 
-.sector {
-  display: flex;
-  flex-direction: column;
-}
+
+
 
 .sector button {
 
@@ -254,12 +270,6 @@
 
 }
 
-@media (max-width:768px) {
-  .sector {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 #dropdownMenuButton {
   padding: .5rem;
@@ -290,13 +300,14 @@
 .Agriculture-section,
 .finance-section,
 .founder-feature,
-
 .infrastructure-official,
 .intro {
   background-color: #ff914d99;
-  padding: 2rem;
+  padding-bottom: 2rem;
 
 }
+
+
 
 .testimonial-founders {
   padding: 2rem;
@@ -664,4 +675,95 @@ li {
   }
 
 
+}
+
+
+
+/* owl carsoule slider css */
+.owl-carousel {
+  background-color: #ff914d99;
+  ;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.owl-carousel a {
+  text-decoration: none;
+}
+
+.owl-carousel .item {
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 350px;
+}
+
+.owl-carousel .item img {
+  height: 200px;
+  border-radius: 10px;
+}
+
+.owl-carousel .item h4 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  /* Increase font size */
+}
+
+.owl-carousel .item p {
+  font-size: 16px;
+  /* Increase font size */
+  color: #555;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Darker background for better visibility */
+  border: none;
+  color: yellow;
+  /* Change arrow color */
+  font-size: 30px;
+  /* Increase font size */
+  cursor: pointer;
+  padding: 10px;
+  /* Add padding */
+  border-radius: 50%;
+  /* Make buttons circular */
+}
+
+.owl-nav .owl-prev {
+  left: 10px;
+}
+
+.owl-nav .owl-next {
+  right: 10px;
+}
+
+.owl-nav button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Darker background on hover */
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.owl-dot.active {
+  background-color: #000;
 }
