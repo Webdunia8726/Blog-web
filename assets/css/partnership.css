@@ -3,7 +3,9 @@
   height: 50px;
 }
 
-
+a{
+  text-decoration: none;
+}
 /* navbar css */
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -303,8 +305,9 @@
 
 /* partnership opportunitiess */
 .cardicon {
-  height: 300px;
+  height: 320px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 13px;
 }
 
 .cardicon img {

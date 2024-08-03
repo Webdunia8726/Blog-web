@@ -118,17 +118,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 style="color: #1552bc;"></i></a>
             <a href="https://www.instagram.com/predulive/"><i class="fa-brands fa-instagram fa-2xl"
                 style="color: #c70a56;"></i></a>
-            <a href=""><i class="fa-brands fa-facebook fa-2xl" style="color: #2059bc;"></i></a>
-            <a href=""><i class="fa-brands fa-square-twitter fa-2xl" style="color: #264f97;"></i></a>
-            <a href=""><i class="fa-brands fa-youtube fa-2xl" style="color: #FF0000;"></i></a>
+            <a href="https://www.facebook.com/predulive/"><i class="fa-brands fa-facebook fa-2xl" style="color: #2059bc;"></i></a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fpredulivef"><i class="fa-brands fa-square-twitter fa-2xl" style="color: #264f97;"></i></a>
+            <a href="https://www.youtube.com/@predulivelabs"><i class="fa-brands fa-youtube fa-2xl" style="color: #FF0000;"></i></a>
           </div>
 
 
           <div class="col-md-2">
             <h5>Resources hub</h5>
             <li><a href="Story.html">Founders Stories</a></li>
-            <li><a href="Podcast-founder.html">Govt. Officials Stories, Founders Podcasts, </a></li>
-            <li><a href="Research.html">Report & Research</a></li>
+            <li><a href="Podcast-founder.html">Govt. Officials Stories</a></li>
+            <li><a href="Research.html">Founder Podcast</a></li>
             <li><a href="Career.html">Career</a></li>
             <li><a href="FaQ.html">FAQs</a></li>
 
@@ -139,6 +139,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <li><a href="story_govt-officer.html">Join our Podcast</a></li>
             <li><a href="support-us-section.html">Spotlight</a></li>
             <li><a href="partnership.html">Partnership</a></li>
+                        <li><a href="Research.html">Report & Research</a></li>
+
 
 
           </div>
@@ -162,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     </div>
     <div class="container-fluid bg-dark p-2">
-      <h6 class="text-center text-white">© 2024 Leaders Boli by Predulive Edutech Foundation. All Rights Reserved</h6>
+      <h6 class="text-center text-white">© 2024 Leaders Boli by Predulive Edutech Foundation. All Rights Reserved.</h6>
     </div>
     `;
   }
