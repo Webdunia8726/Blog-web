@@ -127,8 +127,11 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-md-2">
             <h5>Resources hub</h5>
             <li><a href="Story.html">Founders Stories</a></li>
-            <li><a href="Podcast-founder.html">Govt. Officials Stories</a></li>
-            <li><a href="Research.html">Founder Podcast</a></li>
+            <li><a href="story_govt-officer.html">Officials Stories</a></li>
+            <li><a href="Podcast-founder.html">Founder Podcast</a></li>
+                        <li><a href="Podcast_govt_official.html"> Officials Podcast</a></li>
+
+
             <li><a href="Career.html">Career</a></li>
             <li><a href="FaQ.html">FAQs</a></li>
 
