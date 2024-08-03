@@ -9,7 +9,7 @@ const FeaturedData = [
     id: "2",
     name: "Ashok Khemka",
     img: "GovtOfficial-img/2.jpg",
-    title: "Senior IAS Officer and Whistleblower",
+    title: "Senior IAS Officer",
   },
   {
     id: "3",
@@ -27,7 +27,7 @@ const FeaturedData = [
     id: "5",
     name: "Durga Shakti Nagpal",
     img: "GovtOfficial-img/5.jpg",
-    title: "IAS Officer and Anti-Corruption Crusader",
+    title: "IAS Officer ",
   },
   {
     id: "6",
