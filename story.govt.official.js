@@ -347,7 +347,7 @@ function createCarouselItems(data, containerId) {
 
       col.innerHTML = `
         <div class="card testimonial-card">
-          <img src="${item.img}" alt="${item.name}" class="card-img-top">
+          <img src="${item.img}" alt="${item.name}" class="img-fluid">
           <div class="card-body">
             <h5>${item.name}</h5>
             <p>${item.title}</p>
