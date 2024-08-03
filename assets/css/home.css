@@ -148,6 +148,44 @@ a{
     border: none;
 }
 
+@media (max-width: 768px) {
+    .overlay-container img {
+        height: 300px; /* Adjust the image height for smaller screens */
+    }
+
+    .overlay-text {
+        max-width: 100%; /* Ensure the text takes up more space on smaller screens */
+        padding: 10px; /* Reduce padding */
+        background-color: rgba(255, 255, 255, 0.9); /* Increase background opacity for readability */
+    }
+
+    .overlay-text h1 {
+        font-size: 40px; /* Decrease font size for better readability on mobile */
+    }
+
+    .herobtn {
+        width: 150px; /* Reduce button width */
+        padding: 8px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-container img {
+        height: 200px; /* Further adjust image height for very small screens */
+    }
+
+    .overlay-text h1 {
+        font-size: 30px; /* Further decrease font size */
+    }
+
+    .herobtn {
+        width: 130px; /* Further reduce button width */
+        padding: 6px; /* Adjust padding */
+        font-size: 12px; /* Adjust font size */
+    }
+}
+
 
 /* heading leadersboli */
 .leaders-heilight{
