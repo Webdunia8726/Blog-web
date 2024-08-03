@@ -219,9 +219,7 @@ function createCarouselItems(data, containerId) {
       col.innerHTML = `
         <div class="card testimonial-card">
        <a href="${item.URL || "#"}" target="_blank" rel="noopener noreferrer">
-          <img src="${item.img}" class="img-fluid" alt="${
-        item.name
-      }" class="card-img-top" >
+          <img src="${item.img}" class="card-img-top" alt="${item.name}">
           <div class="card-body">
             <h5>${item.name}</h5>
             <p>${item.title}</p>
