@@ -149,10 +149,12 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
           <div class="col-md-2">
             <h5>Legal</h5>
-            <li><a href="">POSH</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Terms & Conditions</a></li>
-            <li><a href="">Community Guide</a></li>
+            <li><a href="Posh.html">POSH</a></li>
+            <li><a href="Privacy_policy.html">Privacy Policy</a></li>
+            <li><a href="term_conditions.html">Terms & Conditions</a></li>
+            <li><a href="Phishing-notice.html">Phishing Notice</a></li>
+                        <li><a href="Cookiespolicy.html">Cookies&Policy</a></li>
+
 
           </div>
           <div class="col-md-2">
@@ -167,8 +169,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     </div>
     <div class="container-fluid bg-dark p-2">
+
       <h6 class="text-center text-white">© 2024 Leaders Boli by Predulive Edutech Foundation. All Rights Reserved.</h6>
+      
     </div>
+
     `;
   }
 });
