@@ -36,7 +36,40 @@ const newStory = async (req, res) => {
   }
 };
 
+// Update Story
+const updateStory = async (req, res) => {
+  try {
+    const storyId = req.params.id;
+    const updatedStory = await StoryModel.findByIdAndUpdate(storyId, req.body, {
+      new: true,
+    });
+    if (!updatedStory) return res.status(404).send("Story not found");
+    res.json(updatedStory);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+};
+
+const deleteStory = async (req, res) => {
+  try {
+    const storyId = req.params.id;
+    const deletedStory = await StoryModel.findByIdAndDelete(storyId);
+    if (!deletedStory) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Story not found" });
+    }
+    res
+      .status(200)
+      .json({ success: true, message: "Story deleted successfully" });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
 module.exports = {
   getAllStories,
   newStory,
+  updateStory,
+  deleteStory,
 };

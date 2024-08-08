@@ -1,74 +1,85 @@
-a{
+a {
     text-decoration: none;
 }
-.logo{
+
+.logo {
     width: 100px;
     height: 50px;
 }
 
-.headingcolor{
-    color:#ffa365;
+.headingcolor {
+    color: #ffa365;
 }
+
 /* navbar css */
 .dropdown:hover .dropdown-menu {
     display: block;
-  }
-  
-  .dropdown-menu ul{
+}
+
+.dropdown-menu ul {
     list-style: none;
     padding: 0;
-  }
-  .dropdown-menu.show{
+}
+
+.dropdown-menu.show {
     display: flex;
-  }
-  .dropdown-menu li:first-child a{
+}
+
+.dropdown-menu li:first-child a {
     font-weight: bold;
     font-size: 16px;
-  }
-  /* Custom styling for mega menu */
-  .mega-menu {
-    position: static !important;
-  }
+}
 
-  .mega-menu .dropdown-menu {
+/* Custom styling for mega menu */
+.mega-menu {
+    position: static !important;
+}
+
+.mega-menu .dropdown-menu {
     width: 50%;
     padding: 15px;
-    display: none; /* Hide dropdown menu by default */
-    left: 40%; /* Adjust the left position to center horizontally */
-  }
+    display: none;
+    /* Hide dropdown menu by default */
+    left: 40%;
+    /* Adjust the left position to center horizontally */
+}
 
-  .mega-menu:hover .dropdown-menu {
-    display: block; /* Show dropdown menu when hovering over mega-menu */
-  }
+.mega-menu:hover .dropdown-menu {
+    display: block;
+    /* Show dropdown menu when hovering over mega-menu */
+}
 
-  .mega-menu .dropdown-menu a {
+.mega-menu .dropdown-menu a {
     display: block;
     color: #212529;
     text-decoration: none;
-  }
+}
 
-  .dropdown-menu ul {
+.dropdown-menu ul {
     list-style: none;
     padding: 0;
-  }
+}
 
-  .dropdown-menu.show {
+.dropdown-menu.show {
     display: flex;
-  }
-  .dropdown-menu a:hover{
-    color: #1c6bc2;
-  }
+}
 
-  .dropdown-menu li:first-child a {
+.dropdown-menu a:hover {
+    color: #1c6bc2;
+}
+
+.dropdown-menu li:first-child a {
     font-weight: bold;
     font-size: 16px;
-  }
-  .nav-link{
-    font-weight: 500;
-  }
+}
 
-  /* Media query for mobile devices */
+.nav-link {
+    font-weight: 500;
+}
+
+/* Media query for mobile devices */
 @media only screen and (max-width: 600px) {
+
     /* Adjust dropdown menu for mobile */
     .dropdown-menu {
         width: 100%;
@@ -78,8 +89,7 @@ a{
         position: relative;
     }
 
-    Make the dropdown menu stack vertically
-    .dropdown-menu.show {
+    Make the dropdown menu stack vertically .dropdown-menu.show {
         flex-direction: column;
     }
 
@@ -88,7 +98,7 @@ a{
         width: 100%;
         padding: 10px;
         left: 0;
-        
+
     }
 
     /* Adjust links for mobile */
@@ -99,7 +109,7 @@ a{
         text-align: left;
     }
 
-    
+
 }
 
 
@@ -114,8 +124,10 @@ a{
 .overlay-container img {
     width: 100%;
     height: 540px;
-    object-fit: cover; /* Ensures the image covers the container properly */
-    display: block; /* Ensure image is displayed by default */
+    object-fit: cover;
+    /* Ensures the image covers the container properly */
+    display: block;
+    /* Ensure image is displayed by default */
 }
 
 .overlay-text {
@@ -125,12 +137,16 @@ a{
     transform: translateY(-50%);
     color: #ffa365;
     padding: 20px;
-    max-width: 800px; /* Adjust this width as needed */
-    text-align: left; /* Default alignment */
-    background-color: rgba(255, 255, 255, 0.7); /* Optional background for better readability */
+    max-width: 800px;
+    /* Adjust this width as needed */
+    text-align: left;
+    /* Default alignment */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Optional background for better readability */
 }
 
-.overlay-text h1, .overlay-text p {
+.overlay-text h1,
+.overlay-text p {
     margin: 0;
 }
 
@@ -150,73 +166,92 @@ a{
 
 @media (max-width: 768px) {
     .overlay-container img {
-        height: 300px; /* Adjust the image height for smaller screens */
+        height: 300px;
+        /* Adjust the image height for smaller screens */
     }
 
     .overlay-text {
-        max-width: 100%; /* Ensure the text takes up more space on smaller screens */
-        padding: 10px; /* Reduce padding */
-        background-color: rgba(255, 255, 255, 0.9); /* Increase background opacity for readability */
+        max-width: 100%;
+        /* Ensure the text takes up more space on smaller screens */
+        padding: 10px;
+        /* Reduce padding */
+        background-color: rgba(255, 255, 255, 0.9);
+        /* Increase background opacity for readability */
     }
 
     .overlay-text h1 {
-        font-size: 40px; /* Decrease font size for better readability on mobile */
+        font-size: 40px;
+        /* Decrease font size for better readability on mobile */
     }
 
     .herobtn {
-        width: 200px; /* Reduce button width */
-        padding: 8px; /* Adjust padding */
-        font-size: 14px; /* Adjust font size */
+        width: 200px;
+        /* Reduce button width */
+        padding: 8px;
+        /* Adjust padding */
+        font-size: 14px;
+        /* Adjust font size */
     }
 }
 
 @media (max-width: 480px) {
     .overlay-container img {
-        height: 180px; /* Further adjust image height for very small screens */
+        height: 180px;
+        /* Further adjust image height for very small screens */
     }
 
     .overlay-text h1 {
-        font-size: 30px; /* Further decrease font size */
+        font-size: 30px;
+        /* Further decrease font size */
     }
 
     .herobtn {
-        width: 180px; /* Further reduce button width */
-        padding: 6px; /* Adjust padding */
-        font-size: 12px; /* Adjust font size */
+        width: 180px;
+        /* Further reduce button width */
+        padding: 6px;
+        /* Adjust padding */
+        font-size: 12px;
+        /* Adjust font size */
     }
 }
 
 
 /* heading leadersboli */
-.leaders-heilight{
+.leaders-heilight {
     color: black;
 }
-.heigh-light-headre{
-background-color: #ff914d99;;
-padding: 50px;
+
+.heigh-light-headre {
+    background-color: #ff914d99;
+    ;
+    padding: 50px;
 
 
 }
 
 /* card editing */
-.card-body{
+.card-body {
     height: 170px;
 }
 
-.card-img-top{
+.card-img-top {
     height: 200px;
 }
+
 /* end */
 
 /* owl carsoule slider css */
-.owl-carousel{
-    background-color: #ff914d99;;
+.owl-carousel {
+    background-color: #ff914d99;
+    ;
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.owl-carousel a{
+
+.owl-carousel a {
     text-decoration: none;
 }
+
 .owl-carousel .item {
     background: #fff;
     padding: 15px;
@@ -234,11 +269,13 @@ padding: 50px;
 
 .owl-carousel .item h4 {
     margin: 15px 0 10px;
-   font-size: 20px; /* Increase font size */
+    font-size: 20px;
+    /* Increase font size */
 }
 
 .owl-carousel .item p {
-    font-size: 16px; /* Increase font size */
+    font-size: 16px;
+    /* Increase font size */
     color: #555;
 }
 
@@ -246,13 +283,18 @@ padding: 50px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.7); /* Darker background for better visibility */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker background for better visibility */
     border: none;
-    color: yellow; /* Change arrow color */
-    font-size: 30px; /* Increase font size */
+    color: yellow;
+    /* Change arrow color */
+    font-size: 30px;
+    /* Increase font size */
     cursor: pointer;
-    padding: 10px; /* Add padding */
-    border-radius: 50%; /* Make buttons circular */
+    padding: 10px;
+    /* Add padding */
+    border-radius: 50%;
+    /* Make buttons circular */
 }
 
 .owl-nav .owl-prev {
@@ -264,7 +306,8 @@ padding: 50px;
 }
 
 .owl-nav button:hover {
-    background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Darker background on hover */
 }
 
 .owl-dots {
@@ -285,81 +328,105 @@ padding: 50px;
 .owl-dot.active {
     background-color: #000;
 }
+
 /* end */
 
 /* footer */
-.footer{
+.footer {
     background-color: black;
     padding: 40px;
     color: white;
 }
-.logo-footer{
+
+.logo-footer {
     width: 180px;
     height: 100px;
 }
-.footer a,li{
+
+.footer a,
+li {
     list-style: none;
     text-decoration: none;
     color: white;
 }
-.footer h5{
+
+.footer h5 {
     border-bottom: 3px solid #ff914d;
     padding-bottom: 5px;
 }
-.footer .fa-brands{
+
+.footer .fa-brands {
     padding: 5px;
     margin-bottom: 10px;
 }
-.btn-primarynewsletter{
-    background-color: #ff914d ;
+
+.btn-primarynewsletter {
+    background-color: #ff914d;
     color: black;
     font-weight: 600;
-    
-}
-.btn-primarynewsletter:hover{
-     background-color: #ff914d ;
-    
+
 }
 
+.btn-primarynewsletter:hover {
+    background-color: #ff914d;
 
+}
+
+/* footer end  */
 
 
 
 /* General button styling */
-.whatsapp-button, .call-button {
+.whatsapp-button,
+.call-button {
     position: fixed;
-    bottom: 20px; /* Distance from the bottom */
-    z-index: 1000; /* Ensure it's above other elements */
-    font-size: 24px; /* Icon size */
+    bottom: 20px;
+    /* Distance from the bottom */
+    z-index: 1000;
+    /* Ensure it's above other elements */
+    font-size: 24px;
+    /* Icon size */
     width: 50px;
     height: 50px;
     color: white;
     text-align: center;
-    line-height: 50px; /* Vertically center the icon */
-    border-radius: 50%; /* Make it circular */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+    line-height: 50px;
+    /* Vertically center the icon */
+    border-radius: 50%;
+    /* Make it circular */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    /* Add shadow */
 }
 
 /* WhatsApp button (Left side) */
 .whatsapp-button {
-    left: 20px; /* Distance from the left side */
-    background-color: #25D366; /* WhatsApp green color */
+    left: 20px;
+    /* Distance from the left side */
+    background-color: #25D366;
+    /* WhatsApp green color */
 }
 
 /* Call button (Right side) */
 .call-button {
-    right: 20px; /* Distance from the right side */
-    background-color: #007bff; /* Bootstrap primary blue color */
+    right: 20px;
+    /* Distance from the right side */
+    background-color: #007bff;
+    /* Bootstrap primary blue color */
 }
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 600px) {
-    .whatsapp-button, .call-button {
+
+    .whatsapp-button,
+    .call-button {
         width: 40px;
         height: 40px;
-        font-size: 20px; /* Smaller icon size */
-        line-height: 40px; /* Adjust line height */
-        bottom: 15px; /* Adjust position for mobile */
+        font-size: 20px;
+        /* Smaller icon size */
+        line-height: 40px;
+        /* Adjust line height */
+        bottom: 15px;
+        /* Adjust position for mobile */
     }
 }
 
@@ -371,7 +438,8 @@ padding: 50px;
 
 .center-bottom-btn {
     position: absolute;
-    bottom: 10px; /* Adjust the distance from the bottom edge */
+    bottom: 10px;
+    /* Adjust the distance from the bottom edge */
     left: 50%;
     transform: translateX(-50%);
     /* Styling the button */
@@ -387,4 +455,3 @@ padding: 50px;
 .center-bottom-btn:hover {
     background-color: #0056b3;
 }
-

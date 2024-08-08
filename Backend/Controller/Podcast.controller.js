@@ -34,4 +34,36 @@ const newPodcast = async (req, res) => {
   }
 };
 
-module.exports = { getAllPodCast, newPodcast };
+const updatePodcast = async (req, res) => {
+  try {
+    const podcastId = req.params.id;
+    const updatedPodcast = await PodCastModel.findByIdAndUpdate(
+      podcastId,
+      req.body,
+      { new: true }
+    );
+    if (!updatedPodcast) return res.status(404).send("Podcast not found");
+    res.json(updatedPodcast);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+};
+
+const deletePodcast = async (req, res) => {
+  try {
+    const podcastId = req.params.id;
+    const deletedPodcast = await PodCastModel.findByIdAndDelete(podcastId);
+    if (!deletedPodcast)
+      return res
+        .status(404)
+        .json({ success: false, message: "podcast not found" });
+
+    res
+      .status(200)
+      .json({ success: true, message: "podcasts deleted successfully" });
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+};
+
+module.exports = { getAllPodCast, newPodcast, updatePodcast, deletePodcast };

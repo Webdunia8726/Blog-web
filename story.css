@@ -1,85 +1,22 @@
+/* Logo css start */
 .logo {
   width: 100px;
   height: 50px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  opacity: 1;
-  background: none;
-  border: none;
-}
-
-.testimonial-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* logo css end */
 
 
-.testimonial-card {
-  height: 500px !important;
-}
+/* card and  css  start */
 
-.testimonial-card img {
-  height: 300px !important;
-  padding: 20px;
-}
-
-@media (max-width:768px) {
-  .testimonial-card {
-    margin-bottom: 2rem;
-  }
-
-  .testimonial-card {
-    height: 350px !important;
-  }
-
-  .testimonial-card img {
-    height: 200px !important;
-    padding: 20px;
-  }
-
-  .fix {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .card-body {
-    height: 50px;
-  }
-
-  .card-body h2 {
-    font-size: 20px !important;
-  }
-
-  .card-body p {
-    font-size: 12px !important;
-  }
-
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(255, 166, 0, 0.475);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  background-size: 100%;
-}
-
-/* Remove hover effect */
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  background: none;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  transition: none;
-  /* Remove transition */
+.technology-section,
+.Agriculture-section,
+.finance-section,
+.founder-feature,
+.infrastructure-official,
+.intro {
+  background-color: #ff914d99;
+  padding-bottom: 2rem;
 }
 
 .heading-section h5 {
@@ -90,62 +27,43 @@
 .heading-section span {
   font-size: 2rem;
   font-weight: 700;
-
 }
 
 .heading-section p {
   font-size: 2rem;
-
   font-weight: 400;
   color: white;
 }
 
-@media (max-width:768px) {
-  .heading-section h5 {
-    font-size: 2rem;
-    font-weight: 400;
-  }
-
-  .heading-section span {
-    font-size: 1.5rem;
-    font-weight: 500;
-
-  }
-
-  .heading-section p {
-    font-size: 1rem;
-
-    font-weight: 300;
-    color: white;
-  }
+.card-img-top {
+  height: 250px;
 }
 
-
-.card h5 {
-  margin-top: 10px;
-  font-size: 2rem;
-  font-weight: 500;
-  margin-left: 2rem;
+.card a {
+  text-decoration: none;
+  color: black;
 }
 
-.card p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-left: 2rem;
+.card :hover {
+  background-color: blue;
+
 }
 
-.card-body {
-  height: 150px;
-  margin-bottom: 1rem;
-}
+/* card and  css  start */
+
+
+/* slider css start  */
+
+
+
+/* Remove hover effect */
+
 
 
 
 .top-banner {
   position: relative;
 }
-
-
 
 .top-banner button {
   position: absolute;
@@ -317,16 +235,6 @@
   background-color: rgb(233, 229, 229);
 }
 
-.technology-section,
-.Agriculture-section,
-.finance-section,
-.founder-feature,
-.infrastructure-official,
-.intro {
-  background-color: #ff914d99;
-  padding-bottom: 2rem;
-
-}
 
 
 
@@ -696,95 +604,4 @@ li {
   }
 
 
-}
-
-
-
-/* owl carsoule slider css */
-.owl-carousel {
-  background-color: #ff914d99;
-  ;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.owl-carousel a {
-  text-decoration: none;
-}
-
-.owl-carousel .item {
-  background: #fff;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  height: 350px;
-}
-
-.owl-carousel .item img {
-  height: 200px;
-  border-radius: 10px;
-}
-
-.owl-carousel .item h4 {
-  margin: 15px 0 10px;
-  font-size: 20px;
-  /* Increase font size */
-}
-
-.owl-carousel .item p {
-  font-size: 16px;
-  /* Increase font size */
-  color: #555;
-}
-
-.owl-nav button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.7);
-  /* Darker background for better visibility */
-  border: none;
-  color: yellow;
-  /* Change arrow color */
-  font-size: 30px;
-  /* Increase font size */
-  cursor: pointer;
-  padding: 10px;
-  /* Add padding */
-  border-radius: 50%;
-  /* Make buttons circular */
-}
-
-.owl-nav .owl-prev {
-  left: 10px;
-}
-
-.owl-nav .owl-next {
-  right: 10px;
-}
-
-.owl-nav button:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Darker background on hover */
-}
-
-.owl-dots {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.owl-dot {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin: 5px;
-  cursor: pointer;
-}
-
-.owl-dot.active {
-  background-color: #000;
 }

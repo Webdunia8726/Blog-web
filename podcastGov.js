@@ -4,7 +4,7 @@ let allPodcastData = [];
 async function fetchAllStories() {
   try {
     const response = await fetch("http://localhost:2100/api/podcasts");
-    console.log("podcast data", response);
+    console.log("podcast data", response.data);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -74,26 +74,20 @@ function createCarouselItems(data, containerId) {
 // Function to initialize carousels for different categories
 function initializeCarousels() {
   createCarouselItems(
-    allPodcastData.filter((story) => story.category === "founder-Phealthcare"),
-    "healthcareCarouselInner"
+    allPodcastData.filter(
+      (story) => story.category === "P-Gov-administrative-innovation"
+    ),
+    "G-administrative-innovation"
   );
   createCarouselItems(
-    allPodcastData.filter((story) => story.category === "founder-Ptechnology"),
-    "technology-founder"
+    allPodcastData.filter((story) => story.category === "P-Law-and-order"),
+    "G-low-and-order"
   );
   createCarouselItems(
     allPodcastData.filter(
-      (story) => story.category === "founder-Pagriculuture"
+      (story) => story.category === "P-Scientific-Research"
     ),
-    "agricultureCarouselInner"
-  );
-  createCarouselItems(
-    allPodcastData.filter((story) => story.category === "founder-Peducation"),
-    "educationCarouselInner"
-  );
-  createCarouselItems(
-    allPodcastData.filter((story) => story.category === "founder-Pfinance"),
-    "financeCarouselInner"
+    "G-scientific-research"
   );
 }
 
