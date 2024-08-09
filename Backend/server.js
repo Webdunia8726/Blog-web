@@ -15,17 +15,14 @@ global.__basedir = __dirname;
 
 app.use("/files", express.static(path.join(__dirname, "uploads")));
 
-const mongoURI =
-  "mongodb+srv://koliyalritik50:iKMWJ7iV439XltyV@cluster0.wsqflkd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+mongoose.connect("mongodb://localhost:27017/leadersboli");
 
-mongoose
-  .connect(mongoURI)
-  .then(() => {
-    console.log("MongoDB connected successfully");
-  })
-  .catch((err) => {
-    console.error("Error connecting to MongoDB:", err);
-  });
+mongoose.connection.on("connected", () => {
+  console.log("database connected");
+});
+mongoose.connection.on("error", () => {
+  console.log("error connecting to database");
+});
 
 require("./Model/Stories.model.js");
 require("./Model/Podcast.model.js");

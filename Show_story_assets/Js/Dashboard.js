@@ -1,3 +1,21 @@
+function checkAuth() {
+  const isAuthenticated = localStorage.getItem("isAuthenticated");
+  const expiryTime = localStorage.getItem("expiryTime");
+  const currentTime = new Date().getTime();
+
+  if (isAuthenticated === "true" && expiryTime && currentTime < expiryTime) {
+    return true;
+  } else {
+    localStorage.removeItem("isAuthenticated");
+    localStorage.removeItem("expiryTime");
+    return false;
+  }
+}
+
+if (!checkAuth()) {
+  window.location.href = "login.html";
+}
+
 document
   .getElementById("dropdown-select")
   .addEventListener("change", function () {
@@ -76,10 +94,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // Image preview functionality
   document.getElementById("img").addEventListener("change", function (event) {
     const file = event.target.files[0];
+    const previewImg = document.getElementById("preview-img");
+    const imagePreview = document.getElementById("image-preview");
+
     if (file) {
+      if (file.size > 50 * 1024) {
+        // Check if file size is more than 100 KB
+        alert("Image size should be less than 100 KB.");
+        document.getElementById("img").value = ""; // Clear the input
+        previewImg.src = "";
+        imagePreview.style.display = "none";
+        return;
+      }
+
       const reader = new FileReader();
       reader.onload = function (e) {
-        document.getElementById("preview-img").src = e.target.result;
+        previewImg.src = e.target.result;
+        imagePreview.style.display = "block"; // Show the image preview
       };
       reader.readAsDataURL(file);
     }
@@ -98,7 +129,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-  // Fetch and display stories
   async function fetchStories() {
     try {
       const response = await fetch("http://localhost:2100/api/stories");
@@ -108,26 +138,22 @@ document.addEventListener("DOMContentLoaded", () => {
       storiesContainer.innerHTML = ""; // Clear existing content
 
       stories.forEach((story) => {
-        const storyElement = document.createElement("div");
-        storyElement.innerHTML = `
-        <div class="showData">
-            <h6>${story.name}</h6>
-          <p>${story.title}</p>
-          
-          <div class="del-btn">
-              <button onclick="deleteStory('${story._id}')">Delete</button>
-          </div>
-        </div>
-          
+        const storyRow = document.createElement("tr");
+        storyRow.innerHTML = `
+          <td>${story.name}</td>
+          <td>${story.title}</td>
+          <td>
+            <button class="del-btn" onclick="deleteStory('${story._id}')">Delete</button>
+          </td>
         `;
-        storiesContainer.appendChild(storyElement);
+        storiesContainer.appendChild(storyRow);
       });
     } catch (error) {
       console.error("Error fetching stories:", error);
     }
   }
 
-  // Fetch and display podcasts
+  // Example function to fetch podcasts
   async function fetchPodcasts() {
     try {
       const response = await fetch("http://localhost:2100/api/podcasts");
@@ -137,23 +163,44 @@ document.addEventListener("DOMContentLoaded", () => {
       podcastsContainer.innerHTML = ""; // Clear existing content
 
       podcasts.forEach((podcast) => {
-        const podcastElement = document.createElement("div");
-        podcastElement.innerHTML = `
-         
-        <div class="showData">
-           <h6>${podcast.name}</h6>
-          <p>${podcast.title}</p>   
-          <button onclick="deletePodcast('${podcast._id}')">Delete</button>
-        </div>
-          
+        const podcastRow = document.createElement("tr");
+        podcastRow.innerHTML = `
+          <td>${podcast.name}</td>
+          <td>${podcast.title}</td>
+          <td>
+            <button onclick="deletePodcast('${podcast._id}')">Delete</button>
+          </td>
         `;
-        podcastsContainer.appendChild(podcastElement);
+        podcastsContainer.appendChild(podcastRow);
       });
     } catch (error) {
       console.error("Error fetching podcasts:", error);
     }
   }
 
+  async function fetchPodcasts() {
+    try {
+      const response = await fetch("http://localhost:2100/api/podcasts");
+      const podcasts = await response.json();
+      const podcastsContainer = document.querySelector(".podcasts-container");
+
+      podcastsContainer.innerHTML = ""; // Clear existing content
+
+      podcasts.forEach((podcast) => {
+        const podcastRow = document.createElement("tr");
+        podcastRow.innerHTML = `
+          <td>${podcast.name}</td>
+          <td>${podcast.title}</td>
+          <td>
+            <button class='del-btn' onclick="deletePodcast('${podcast._id}')">Delete</button>
+          </td>
+        `;
+        podcastsContainer.appendChild(podcastRow);
+      });
+    } catch (error) {
+      console.error("Error fetching podcasts:", error);
+    }
+  }
   fetchStories();
   fetchPodcasts();
 });

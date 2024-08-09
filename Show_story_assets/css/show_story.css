@@ -164,15 +164,11 @@
 }
 
 .author-imgae {
-  border: 1px solid black;
+
   display: flex;
   justify-content: center !important;
   align-items: center;
   flex-direction: column;
-}
-
-.col-md-6 {
-  border: 2px solid black;
 }
 
 .img-fluid {

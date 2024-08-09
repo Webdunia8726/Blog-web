@@ -54,12 +54,12 @@
       <label for="img">Upload Image of Founder or Govt. Official</label>
       <input type="file" name="img" id="img" class="form-control" required>
 
-      <span>Image size should be less than 500kb and 420 * 260 px</span>
+      <span>Image size should be less than 100 KB and 420 * 260 px</span>
       <div id="image-preview" class="image-preview">
         <img id="preview-img" src="" alt="Image Preview">
       </div>
 
-      <label for="quote">Enter Story of Founder or Govt. Official</label>
+      <label for="quote">Enter Quote </label>
       <textarea id="quote" name="quote" class="form-control" required></textarea>
 
 
@@ -95,30 +95,54 @@
       </select>
       <label for="image-podcast">Upload Image of Founder or Govt. Official</label>
       <input type="file" id="image-podcast" name="img" class="form-control">
-      <span>Image size should be less than 500kb and 420 * 260 px</span>
-      <div id="image-preview-podcast" class="image-preview">
-        <img id="preview-img-podcast" src="" alt="Podcast Image Preview">
+
+      <span>Image size should be less than 50 KB and 420 * 260 px</span>
+      <div id="image-preview" class="image-preview">
+        <img id="preview-img" src="" alt="Image Preview">
       </div>
+
       <button type="submit" class="btn btn-primary mt-3">Submit Podcast</button>
     </form>
 
   </div>
 
-  <!-- Add this section to display the stories and podcasts -->
+
+  </div>
+
+  <!-- show stories and podcast from here  -->
+
   <div class="container mt-4">
     <h2 class="text-center m-3">Stories and Podcasts</h2>
     <div class="row p-4">
       <div class="col-md-6">
         <h2>Stories</h2>
-        <div class="stories-container">
-          <!-- Stories will be dynamically inserted here -->
-        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Title</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody class="stories-container">
+            <!-- Stories will be dynamically inserted here -->
+          </tbody>
+        </table>
       </div>
       <div class="col-md-6">
         <h2>Podcasts</h2>
-        <div class="podcasts-container">
-          <!-- Podcasts will be dynamically inserted here -->
-        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Title</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody class="podcasts-container">
+            <!-- Podcasts will be dynamically inserted here -->
+          </tbody>
+        </table>
       </div>
     </div>
   </div>

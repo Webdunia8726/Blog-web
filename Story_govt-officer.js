@@ -47,7 +47,6 @@ function createCarouselItems(data, containerId) {
           </a>
         </div>
       `;
-
       row.appendChild(col);
     }
 
